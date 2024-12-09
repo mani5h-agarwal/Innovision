@@ -22,7 +22,7 @@
   .title-g{
     font-family: "Anton", sans-serif;
     font-size: 7.5vw;
-    background: linear-gradient(180deg, #fff, #000000);
+    background: linear-gradient(180deg, #fff, #2e2e2e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* z-index: 1; */
