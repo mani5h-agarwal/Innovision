@@ -153,35 +153,29 @@ html, body {
 .sanga-box{
     top: 40%;
     left: -4%;
-    width: 10vw;
 }
 
 .abhivyakta-box{
     bottom: 20%;
     left: 0%;
-    width:11vw;
 }
 
 .vidyut-box{
     top: 38%;
     right: -4%;
-    width: 8vw;
 }
 
 .kaaryavarta-box{
     bottom: 20%;
     right: 0%;
-    width: 8vw;
 }
 .yantrika-box{
     top: 20%;
     left: 25%;
-    width: 5vw;
 }
 .saahitya-box{
     top: 22%;
     right: 22%;
-    width: 7vw;
 }
 
 .sanga {
@@ -267,3 +261,89 @@ html, body {
     background-color: #164b8d;
 }
 
+
+@media (max-width: 500px) {
+    .circle0{
+        width: 135vw;
+        height: 135vw;
+        transform: rotate(90deg);
+    clip-path: ellipse(49% 140% at 50% 60%);
+
+    }
+    .circle01{
+        width: 135vw;
+        height: 135vw;
+    }
+    .circle02{
+        width: 135vw;
+        height: 135vw;
+    }
+    .circle2{
+        width: 95vw;
+        height: 95vw;
+    }
+    .circle2-alias{
+        width: 95vw;
+        height: 95vw;
+        clip-path: ellipse(25% 140% at 50% 60%);
+        transform: rotate(91deg);
+
+    }
+    .circle3{
+        width: 55vw;
+        height: 55vw;
+    }
+    .semi-circle{
+        width: 15vw;
+    }
+    .title-inno {
+        font-size: 10.5vw;
+    }
+    .text{
+        font-size: 3vw;
+    }
+    .subtitle{
+        font-size: 4vw;
+        font-weight: 500;
+        opacity: 0.3;
+    }
+    .logo{
+        width: 15vw;
+        height: 15vw;
+        top:10%
+    }
+
+    .yantrika-box{
+        top: 2%;
+        left: 5%;
+        width: 10vw;
+    }
+    .saahitya-box{
+        top: 7%;
+        right: 3%;
+        width: 12vw;
+    }
+
+    .abhivyakta-box{
+        bottom: 2%;
+        left: 0%;
+        width:17vw;
+    }
+    .kaaryavarta-box{
+        bottom: 4%;
+        right: 2%;
+        width: 13vw;
+    }
+    .sanga-box{
+        top: -35%;
+        left: 40%;
+        width: 18vw;
+    }
+
+    .vidyut-box{
+        top: 118%;
+        right: 40%;
+        width: 14vw;
+    }
+    
+}
