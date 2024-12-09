@@ -71,7 +71,7 @@ const HeroSection = () => {
 
           <div className="title-box">
             <a className="subtitle">ACM NITK</a>
-            <a className="title">Innovision&#39;25</a>
+            <a className="title-inno">Innovision&#39;25</a>
           </div>
         </div>
       </div>

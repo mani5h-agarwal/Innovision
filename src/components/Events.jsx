@@ -5,7 +5,7 @@ const Events = () => {
   const events = [
     {
       title: "CRYPTIC",
-      subtitle: "SANGANITA",
+      subtitle: "SANGANITRA",
       description: "Description 1",
       image: "innovision.svg",
       sigimage: "sanganitra-color.svg",

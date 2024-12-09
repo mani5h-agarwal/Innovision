@@ -15,10 +15,31 @@
     animation: slid 30s linear infinite;
     margin-top: 100px;
     margin-bottom: 80px;
-    
-    
+  }
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .scope {
+        width: 180px;
+        height: 180px;
+
+      }
   }
   
+  @media (max-width: 768px) {
+    .scope {
+        width: 160px;
+        height: 160px;
+
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .scope {
+        width: 140px;
+        height: 140px;
+
+      }
+  }
   .scope span {
     position: absolute;
     top: 0;
@@ -29,6 +50,27 @@
     transform-style: preserve-3d;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
   }
+  /* Adjustments for mobile view */
+@media (max-width: 1200px) {
+    .scope span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px); /* Closer for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .scope span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px); /* Closer for mobile view */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scope span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px); /* Closest for very small screens */
+    }
+  }
+  
+  
+
   .scope span img {
     position: absolute;
     top: 0;

@@ -23,7 +23,7 @@ html, body{
 
 .title{
     font-family: "Anton", sans-serif;
-    font-size: 6vw;
+    font-size: 4.5vw;
     background: linear-gradient(180deg, #fff, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
