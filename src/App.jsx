@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <HeroSection />
-      <Events />
+      <Events /> 
       <Gallery />
       
     </>

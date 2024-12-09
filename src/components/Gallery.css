@@ -7,15 +7,35 @@
     overflow-x: hidden;
   }
 
+
   .scope {
     position: relative;
-    width: 200px;
+    width: 220px;
     height: 200px;
     transform-style: preserve-3d;
     animation: slid 30s linear infinite;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+    
   }
+  .title-g{
+    font-family: "Anton", sans-serif;
+    font-size: 7.5vw;
+    background: linear-gradient(180deg, #fff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* z-index: 1; */
+}
+
+.subtitle-g{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: #fff;
+    letter-spacing: 0.1em;
+    opacity: 0.3;
+}   
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
     .scope {
@@ -34,10 +54,11 @@
   }
   
   @media (max-width: 480px) {
-    .scope {
-        width: 140px;
-        height: 140px;
-
+      .scope {
+        width: 60%;
+        height: 45vw;
+        animation: slid-vertical 30s linear infinite; /* Change animation to vertical */
+        margin-bottom: 50%;
       }
   }
   .scope span {
@@ -65,8 +86,18 @@
   
   @media (max-width: 480px) {
     .scope span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px); /* Closest for very small screens */
-    }
+        transform: rotateX(calc(var(--i) * 45deg)) translateZ(250px); /* Rotate vertically */
+      }
+  .title-box-g{
+    margin-bottom: 20%;
+  }
+  .title-g{
+    font-size: 12vw;
+  }
+  .subtitle-g{
+    font-size: 5vw;
+  }
+
   }
   
   
@@ -82,7 +113,7 @@
     transition: 2s;
   }
   .scope span:hover img {
-    transform: translateY(-50px) scale(1.7);
+    transform: translateY(-50px) scale(1.5);
   }
   @keyframes slid {
     0% {
@@ -100,23 +131,27 @@
     justify-content: center;
     align-items: center;
     /* z-index: 1; */
-    margin-bottom: 50px;
   }
 
 
-.title-g{
-    font-family: "Anton", sans-serif;
-    font-size: 7.5vw;
-    background: linear-gradient(180deg, #fff, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* z-index: 1; */
-}
 
-.subtitle-g{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    color: #fff;
-    letter-spacing: 0.1em;
-    opacity: 0.2;
-}   
+
+  /* Keyframes for horizontal rotation (default) */
+  @keyframes slid-horizontal {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  
+  /* Keyframes for vertical rotation (mobile) */
+  @keyframes slid-vertical {
+    0% {
+      transform: perspective(1000px) rotateX(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateX(-360deg);
+    }
+  }

@@ -49,7 +49,7 @@ const Events = () => {
 
   return (
     <div className="outer">
-      <a className="title">Events</a>
+    <a className="title">Events</a>
       <div className="cards">
         {events.map((event, index) => (
           <Card

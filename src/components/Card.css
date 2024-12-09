@@ -1,7 +1,7 @@
 .card {
   width: 13rem; /* Default size */
   height: 14rem; /* Default size */
-  background: linear-gradient(-45deg, #030c17, #0a223f);
+  background: linear-gradient(-45deg, #030c17, #0e2e56);
   border-radius: 10%;
   margin: 10px;
   display: flex;
@@ -15,7 +15,7 @@
 
 .card:hover {
   transform: scale(1.05); /* Enlarge the card on hover */
-  background: linear-gradient(-45deg, #030c17, #103562);
+  background: linear-gradient(-45deg, #05162a, #133f75);
   .reg-btn{
     background: #921919;
   }
@@ -69,19 +69,18 @@
     height: 13rem; /* Smaller size for mobile devices */
   }
   .circle {
-    width: 3rem; /* Adjusts based on viewport width */
-    height: 3rem; /* Same value as width to keep it a perfect circle */
+    width: 4rem; /* Adjusts based on viewport width */
+    height: 4rem; /* Same value as width to keep it a perfect circle */
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    width: 10rem; /* Even smaller for smaller mobile screens */
-    height: 11rem; /* Even smaller for smaller mobile screens */
+    width: 75%; /* Even smaller for smaller mobile screens */
   }
   .circle {
-    width: 3rem; /* Adjusts based on viewport width */
-    height: 3rem; /* Same value as width to keep it a perfect circle */
+    width: 4rem; /* Adjusts based on viewport width */
+    height: 4rem; /* Same value as width to keep it a perfect circle */
   }
 }
 
@@ -107,13 +106,13 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
   color: #fff;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 .subtitle-card {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1rem;
     color: #fff;
-    opacity: 0.2;
+    opacity: 0.3;
 
 }
 .reg-btn {
