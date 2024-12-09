@@ -1,0 +1,11 @@
+/* App.css or global CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+div {
+  height: 100vh; /* Make each section occupy the full viewport */
+}

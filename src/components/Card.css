@@ -1,0 +1,169 @@
+.card {
+  width: 13rem; /* Default size */
+  height: 14rem; /* Default size */
+  background: linear-gradient(-45deg, #030c17, #0a223f);
+  border-radius: 10%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for resizing */
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+  background: linear-gradient(-45deg, #030c17, #103562);
+  .reg-btn{
+    background: #921919;
+  }
+  .sig-image{
+    opacity: 0.3;
+}
+.circle{
+    background: #1c5ba9;
+}
+.image{
+    opacity: 0.9;
+}
+.title-card{
+    opacity: 0.8;
+}
+.subtitle-card{
+    opacity: 0.4;
+}
+
+}
+
+.circle {
+  position: absolute;
+  width: 4.5rem; /* Adjusts based on viewport width */
+  height: 4.5rem; /* Same value as width to keep it a perfect circle */
+  border-radius: 50%;
+  background: #154581;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -15%;
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .card {
+    width: 13rem; /* Smaller size for tablets */
+    height: 14rem; /* Smaller size for tablets */
+  }
+  .circle {
+    width: 4rem; /* Adjusts based on viewport width */
+    height: 4rem; /* Same value as width to keep it a perfect circle */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 12rem; /* Smaller size for mobile devices */
+    height: 13rem; /* Smaller size for mobile devices */
+  }
+  .circle {
+    width: 3rem; /* Adjusts based on viewport width */
+    height: 3rem; /* Same value as width to keep it a perfect circle */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 10rem; /* Even smaller for smaller mobile screens */
+    height: 11rem; /* Even smaller for smaller mobile screens */
+  }
+  .circle {
+    width: 3rem; /* Adjusts based on viewport width */
+    height: 3rem; /* Same value as width to keep it a perfect circle */
+  }
+}
+
+.image {
+  width: 60%;
+  height: 60%;
+  opacity: 0.8;
+  /* object-fit: cover; */
+  /* border-radius: 10%; */
+}
+.title-box-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    row-gap: 0.5rem;
+    position: relative;
+}
+.title-box-card:hover{
+    row-gap: 2rem;
+}
+.title-card {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.6;
+}
+.subtitle-card {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.2;
+
+}
+.reg-btn {
+  position: absolute;
+    bottom: -9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7c2424;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+
+}
+
+.reg-btn:hover{
+    animation: spinBackForth 0.5s ease-in-out;
+}
+.button-title {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 0.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-right: 1.5rem;
+}
+@keyframes spinBackForth {
+    0% {
+      transform: rotate(0deg);
+    }
+    33% {
+      transform: rotate(10deg);
+    }
+    66% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
+.sig-image{
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    opacity: 0;
+    /* bottom: 0;  */
+    
+}
