@@ -2,9 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-}
-
-.outer {
+  }
+  
+  .outer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,54 +14,54 @@ html, body {
     position: relative;
     overflow: hidden;
     /* transform: translateY(-10%); */
-}
-
-.title-box{
+  }
+  
+  .title-box{
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-.subtitle{
+  
+  }
+  .subtitle{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 2.5vw;
     color: #fff;
     letter-spacing: 0.1em;
     opacity: 0.2;
-
-}
-.title-inno {
+  
+  }
+  .title-inno {
     font-family: "Anton", sans-serif;
     font-size: 6vw;
     background: linear-gradient(180deg, #fff, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 1;
-}
-.logo{
+  }
+  .logo{
     position: absolute;
     width: 7vw;
     height: 7vw;
     top: 30%;
     opacity: 0.5;
     z-index: 10;
-}
-.logo:hover {
+  }
+  .logo:hover {
     animation: bigger 0.6s infinite ease-in-out; /* Override default animation on hover */
     cursor: pointer;
     z-index: 10;
-}
-.circle0{
+  }
+  .circle0{
     position: absolute;
     width: 85vw;  /* Adjusts based on viewport width */
     height: 85vw; /* Same value as width to keep it a perfect circle */
     border-radius: 50%;
     border: 3px solid rgba(169, 169, 169, 0.2);
     clip-path: ellipse(40% 140% at 50% 60%);
-}
-.circle01{
+  }
+  .circle01{
     position: absolute;
     width: 85vw;  /* Adjusts based on viewport width */
     height: 85vw; /* Same value as width to keep it a perfect circle */
@@ -69,9 +69,9 @@ html, body {
     border: 3px solid rgba(169, 169, 169, 0.2);
     clip-path: ellipse(8% 140% at 58% 60%);
     transform: rotate(90deg);
-}
-
-.circle02{
+  }
+  
+  .circle02{
     position: absolute;
     width: 85vw;  /* Adjusts based on viewport width */
     height: 85vw; /* Same value as width to keep it a perfect circle */
@@ -79,9 +79,9 @@ html, body {
     border: 3px solid rgba(169, 169, 169, 0.2);
     clip-path: ellipse(10% 140% at 72.65% 60%);
     transform: rotate(-89.75deg);
-}
-
-.circle1 {  
+  }
+  
+  .circle1 {  
     position: absolute;
     /* bottom: 0px; */
     width: 85vw;  /* Adjusts based on viewport width */
@@ -92,10 +92,10 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 0;
-
-}
-
-.circle2 {
+  
+  }
+  
+  .circle2 {
     position: absolute;
     flex-direction: column;
     width: 55vw;  /* Adjusts based on viewport width */
@@ -107,9 +107,9 @@ html, body {
     align-items: center;
     z-index: -1;
     clip-path: ellipse(30% 140% at 50% 60%);
-}
-
-.circle2-alias{
+  }
+  
+  .circle2-alias{
     position: absolute;
     flex-direction: column;
     width: 55vw;  /* Adjusts based on viewport width */
@@ -122,10 +122,10 @@ html, body {
     z-index: 1;
     clip-path: ellipse(35% 140% at 56.2% 60%);
     transform: rotate(91deg);
-
-}
-
-.circle3{
+  
+  }
+  
+  .circle3{
     position: relative;
     width: 30vw;  /* Adjusts based on viewport width */
     height: 30vw; /* Same value as width to keep it a perfect circle */
@@ -136,102 +136,109 @@ html, body {
     align-items: center;
     z-index: 0;
     clip-path: ellipse(46% 100% at 50% 40%);
-}
-/* .circle1, .circle2, .circle3 {
+  }
+  /* .circle1, .circle2, .circle3 {
     overflow: hidden;
-} */
-
-
-.sanga-box, .abhivyakta-box, .vidyut-box, .kaaryavarta-box, .saahitya-box, .yantrika-box{ 
+  } */
+  
+  
+  .sanga-box, .abhivyakta-box, .vidyut-box, .kaaryavarta-box, .saahitya-box, .yantrika-box{ 
     position: absolute;
     display: flex;
     flex-direction: column;
     z-index: 1;
     
-
-}
-.sanga-box{
+  
+  }
+  .sanga-box{
     top: 40%;
     left: -4%;
-}
-
-.abhivyakta-box{
+    width: 10vw;
+  }
+  
+  .abhivyakta-box{
     bottom: 20%;
     left: 0%;
-}
-
-.vidyut-box{
+    width:11vw;
+  }
+  
+  .vidyut-box{
     top: 38%;
     right: -4%;
-}
-
-.kaaryavarta-box{
+    width: 8vw;
+  }
+  
+  .kaaryavarta-box{
     bottom: 20%;
     right: 0%;
-}
-.yantrika-box{
+    width: 8vw;
+  }
+  .yantrika-box{
     top: 20%;
     left: 25%;
-}
-.saahitya-box{
+    width: 5vw;
+  }
+  .saahitya-box{
     top: 22%;
     right: 22%;
-}
-
-.sanga {
+    width: 7vw;
+  }
+  
+  
+  .sanga {
     animation: hover 3s infinite ease-in-out;
     animation-delay: 0s; /* No delay */
-}
-
-.abhivyakta {
+  }
+  
+  .abhivyakta {
     animation: hover 3s infinite ease-in-out;
     animation-delay: 0.5s; /* Slight delay */
-}
-
-.vidyut{
+  }
+  
+  .vidyut{
     animation: hover 3s infinite ease-in-out;
     animation-delay: 1s; /* More delay */
-}
-.saahitya {
+  }
+  .saahitya {
     animation: hover 3s infinite ease-in-out;
     animation-delay: 1.5s; /* More delay */
-}
-.kaaryavarta {
+  }
+  .kaaryavarta {
     animation: hover 3s infinite ease-in-out;
     animation-delay: 1.8s; /* More delay */
-}
-.yantrika {
+  }
+  .yantrika {
     animation: hover 3s infinite ease-in-out;
     animation-delay: 2.2s; /* More delay */
-}
-
-@keyframes hover {
+  }
+  
+  @keyframes hover {
     0%, 100% {
         transform: translateY(0); /* At rest */
     }
     50% {
         transform: translateY(-2vw); /* Hover upwards */
     }
-}
-
-
-
-
-.sanga:hover, .abhivyakta:hover, .vidyut:hover, .saahitya:hover, .kaaryavarta:hover, .yantrika:hover {
+  }
+  
+  
+  
+  
+  .sanga:hover, .abhivyakta:hover, .vidyut:hover, .saahitya:hover, .kaaryavarta:hover, .yantrika:hover {
     animation: vibrate 0.6s infinite ease-in-out !important; /* Override default animation on hover */
-}
-@keyframes vibrate {
+  }
+  @keyframes vibrate {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
     50% { transform: translateX(5px); }
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
-}
-
-
-.text{
+  }
+  
+  
+  .text{
     font-family: "Anton", sans-serif;
-
+  
     font-size: 1.5vw;
     color: #fff;
     /* letter-spacing: 0.1em; */
@@ -239,36 +246,36 @@ html, body {
     text-align: center;
     padding-top: 5px;
     
-}
-
-
-@keyframes bigger {
+  }
+  
+  
+  @keyframes bigger {
     0%, 100% {
         transform: scale(1); /* At rest */
     }
     50% {
         transform: scale(1.1); /* Hover upwards */
     }
-}
-
-
-.semi-circle{
+  }
+  
+  
+  .semi-circle{
     position: absolute;
     top: -2%;
     width: 8vw;
     height: 2vw;
     background-color: #081120;
     background-color: #164b8d;
-}
-
-
-@media (max-width: 500px) {
+  }
+  
+  
+  @media (max-width: 500px) {
     .circle0{
         width: 135vw;
         height: 135vw;
         transform: rotate(90deg);
     clip-path: ellipse(49% 140% at 50% 60%);
-
+  
     }
     .circle01{
         width: 135vw;
@@ -287,7 +294,7 @@ html, body {
         height: 95vw;
         clip-path: ellipse(25% 140% at 50% 60%);
         transform: rotate(91deg);
-
+  
     }
     .circle3{
         width: 55vw;
@@ -312,7 +319,7 @@ html, body {
         height: 15vw;
         top:10%
     }
-
+  
     .yantrika-box{
         top: 2%;
         left: 5%;
@@ -323,7 +330,7 @@ html, body {
         right: 3%;
         width: 12vw;
     }
-
+  
     .abhivyakta-box{
         bottom: 2%;
         left: 0%;
@@ -339,11 +346,11 @@ html, body {
         left: 40%;
         width: 18vw;
     }
-
+  
     .vidyut-box{
         top: 118%;
         right: 40%;
         width: 14vw;
     }
     
-}
+  }
