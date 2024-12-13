@@ -48,8 +48,8 @@ const Events = () => {
   ];
 
   return (
-    <div className="outer">
-    <a className="title">Events</a>
+    <div className="outer-events">
+    <a className="title-events">Events</a>
       <div className="cards">
         {events.map((event, index) => (
           <Card

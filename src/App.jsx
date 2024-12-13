@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection'
 import Gallery from './components/Gallery'
 import Events from './components/Events'
+import './App.css'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <>
       <HeroSection />
       <Events /> 
-      <Gallery />
+      <Gallery /> 
       
     </>
   )

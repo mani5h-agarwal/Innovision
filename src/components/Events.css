@@ -1,24 +1,18 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%; /* Allow the body to expand as needed */
-  width: 100%;
-  overflow-x: hidden; /* No horizontal scrolling */
-}
 
-.outer {
+.outer-events {
     height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden; /* Prevent horizontal scrolling */
   background: linear-gradient(180deg, #06182e, #0e3059);
 }
 
-.title {
+.title-events {
   font-family: "Anton", sans-serif;
   font-size: 4.5vw;
   background: linear-gradient(180deg, #fff, #000000);
@@ -32,6 +26,7 @@ body {
     position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default to 3 cards per row */
+  padding-bottom: 6vh;
   /* gap: 20px;  */
   row-gap: 60px; /* Adjust vertical gap */
   /* padding: 20px; */
@@ -44,7 +39,7 @@ body {
   .cards {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
   }
-  .title {
+  .title-events {
     font-size: 7vw;
   }
 }
@@ -56,7 +51,7 @@ body {
     padding-top: 7%;
     padding-bottom: 7%;
   }
-  .title {
+  .title-events {
     font-size: 12vw;
     margin-top: 5%;
   }

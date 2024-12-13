@@ -23,10 +23,9 @@ const HeroSection = () => {
   };
 
   return (
+    <>
+    <div className="navbar"></div>
     <div className="outer" style={{ background: gradient }}>
-      <div className="circle0"></div>
-      <div className="circle01"></div>
-      <div className="circle02"></div>
       <div className="circle1">
         <img
           src="innovision.svg"
@@ -34,6 +33,9 @@ const HeroSection = () => {
           className="logo"
           onClick={handleLogoClick}
         />
+        <div className="circle0"></div>
+        <div className="circle01"></div>
+        <div className="circle02"></div>
 
         <div className="sanga-box">
           <img src="sanganitra.svg" alt="sanga" className="sanga" />
@@ -63,7 +65,6 @@ const HeroSection = () => {
           <img src="yantrika.svg" alt="yantrika" className="yantrika" />
           <a className="text">Yantrika</a>
         </div>
-
         <div className="circle2-alias"></div>
         <div className="circle2">
           <div className="circle3">
@@ -78,6 +79,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
