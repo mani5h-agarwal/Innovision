@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <>
-    <div className="navbar"></div>
+    {/* <div className="navbar"></div> */}
     <div className="outer" style={{ background: gradient }}>
       <div className="circle1">
         <img
