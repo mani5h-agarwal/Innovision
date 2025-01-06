@@ -15,7 +15,7 @@
   position: relative;
   border: 1px solid #0e2e56;
   padding-inline: 8%;
-  padding-bottom: 5%;
+  padding-bottom: 15%;
 }
 
 
@@ -59,8 +59,8 @@
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .card {
-    width: 10rem; /* Smaller size for tablets */
-    height: 11rem; /* Smaller size for tablets */
+    width: 12rem; /* Smaller size for tablets */
+    /* height: 11rem; Smaller size for tablets */
   }
   
   .circle {
@@ -84,6 +84,8 @@
   .card {
     width: 70%; /* Even smaller for smaller mobile screens */
     padding-top: 1rem;
+  padding-bottom: 5%;
+
   }
   .circle {
     width: 4rem; /* Adjusts based on viewport width */

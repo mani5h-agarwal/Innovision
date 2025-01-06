@@ -122,12 +122,12 @@ const Events = () => {
             <div className="btn-container">
               <button
                 className="reg-btn"
-                onClick={() => window.open(registerURL)}
+                onClick={() => window.open(clanURL)}
               >
-                <a className="button-title">Register for Events</a>
+                <a className="button-title">Register Clan</a>
               </button>
-              <button className="clan-btn" onClick={() => window.open(clanURL)}>
-                <a className="button-title-clan">Register Clan</a>
+              <button className="clan-btn" onClick={() => window.open(registerURL)}>
+                <a className="button-title-clan">Register for Events</a>
               </button>
             </div>
           </div>
