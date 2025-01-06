@@ -39,6 +39,7 @@ position: relative;
 
 .inst{
   opacity: 0.5;
+
 }
 
 .cards {
@@ -61,7 +62,9 @@ position: relative;
   text-decoration-color: #fff; /* Optional: Set the color of the underline */
   text-decoration-thickness: 2px; /* Optional: Set the thickness of the underline */
   text-underline-offset: 5px;
+  color: #fff;
 }
+
 
 @media (max-width: 768px) {
   .cards {

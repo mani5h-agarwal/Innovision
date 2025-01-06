@@ -9,6 +9,10 @@ const Events = () => {
     instructionsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+
+  const clanURL = "https://docs.google.com/forms/d/e/1FAIpQLSdF26gfSSm0ZHeEDt41aiilu99PS-Yt63WEgQ2hKKmeIEzONA/viewform?usp=dialog"
+  const registerURL = "https://docs.google.com/forms/d/e/1FAIpQLSdP3tc3S6LGrMAAdpztiTHS29gve_FQM-d75TZQl0kbjrgvqw/viewform?usp=dialog"
+
   const events = [
     {
       title: "CRYPTIC",
@@ -83,8 +87,8 @@ const Events = () => {
           <br />
           1. Assemble your squad — each clan can have up to 4 members.
           <br />
-          2. <a className="clan">Register</a> your Clan using the form link provided. Don’t forget to
-          choose a name that’s as epic as your battles! 😉
+          2. Register your Clan using the form link provided. Don’t forget to
+          choose a name that’s as epic as your battles! 😉 <a className="clan" href={clanURL}>Click here</a> 
           <br />
           3. Choose the arenas you want to conquer. Why settle for one battle
           when you can dominate them all? 💪
@@ -112,7 +116,7 @@ const Events = () => {
         <p>
           <div>
             <p className="inst">Let the battles begin — clash your way to glory! 🛡🔥</p>
-            <button className="reg-btn">
+            <button className="reg-btn" onClick={() => window.open(registerURL)}>
               <a className="button-title">Register</a>
             </button>
           </div>
