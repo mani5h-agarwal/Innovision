@@ -1,9 +1,11 @@
 .card {
   width: 13rem; /* Default size */
-  height: 14rem; /* Default size */
+  /* height: 17rem; Default size */
   background: linear-gradient(-45deg, #030c17, #0e2e56);
   border-radius: 10%;
   margin: 10px;
+
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +14,8 @@
   transition: all 0.3s ease; /* Smooth transition for resizing */
   position: relative;
   border: 1px solid #0e2e56;
+  padding-inline: 8%;
+  padding-bottom: 5%;
 }
 
 
@@ -78,7 +82,8 @@
 
 @media (max-width: 480px) {
   .card {
-    width: 75%; /* Even smaller for smaller mobile screens */
+    width: 70%; /* Even smaller for smaller mobile screens */
+    padding-top: 1rem;
   }
   .circle {
     width: 4rem; /* Adjusts based on viewport width */
@@ -115,11 +120,19 @@
     font-size: 1rem;
     color: #fff;
     opacity: 0.3;
-
 }
-.reg-btn {
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+.view-btn {
   position: absolute;
     bottom: -9%;
+    right: 9%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,18 +143,18 @@
 
 }
 
-.reg-btn:hover{
+.view-btn:hover{
     animation: spinBackForth 0.5s ease-in-out;
 }
-.button-title {
+.button-title-view {
   font-size: 1rem;
   color: #fff;
   margin-left: 0.5rem;
   text-align: center;
-  padding-left: 1rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-right: 1.5rem;
+  padding-left: 0.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 1.2rem;
 }
 @keyframes spinBackForth {
     0% {
@@ -157,7 +170,6 @@
       transform: rotate(0deg);
     }
   }
-
 
 
 

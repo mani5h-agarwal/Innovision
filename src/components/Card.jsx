@@ -1,20 +1,20 @@
 import "./Card.css";
 
-const Card = ({ title, description, image, subtitle, sigimage }) => {
+const Card = ({ title, description, image, subtitle, sigimage, onViewClick }) => {
   return (
     <div className="card">
       <div className="circle">
-        <img src={image} className="image"></img>
+        <img src={image} className="image" alt={title} />
       </div>
       <div className="title-box-card">
         <a className="title-card">{title}</a>
         <a className="subtitle-card">{subtitle}</a>
       </div>
-      {/* <p>{description}</p> */}
-      <button className="reg-btn">
-        <a className="button-title">Register</a>
+      <p className="description">{description}</p>
+      <button className="view-btn" onClick={onViewClick}>
+        <a className="button-title-view">Go</a>
       </button>
-      <img src={sigimage} className="sig-image"></img>
+      <img src={sigimage} className="sig-image" alt={subtitle} />
     </div>
   );
 };
