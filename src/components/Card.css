@@ -130,6 +130,7 @@
   opacity: 0.4;
   letter-spacing: 0.1em;
   font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .view-btn {
   position: absolute;
