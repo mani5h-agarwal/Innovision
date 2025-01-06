@@ -94,7 +94,7 @@ const Events = () => {
             Click here
           </a> */}
           <br />
-          3. Choose the arenas you want to conquer. Why settle for one battle
+          3. Choose the arenas you want to conquer using the events registration button. Why settle for one battle
           when you can dominate them all? 💪
           <br />
           4. A Clan Leaderboard will track the action. The top 3 clans with the

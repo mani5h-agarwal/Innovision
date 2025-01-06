@@ -163,7 +163,7 @@ position: relative;
       margin-bottom: 45%;
     }
     .btn-container {
-      flex-direction: column-reverse;
+      flex-direction: column;
       bottom: -19%;
       right: 15%;
     }
