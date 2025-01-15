@@ -1,161 +1,161 @@
-  .outer-gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(180deg, #06182e, #0e3059);
+.outer-gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #06182e, #0e3059);
 
 
-  }
+}
 
-  .scope {
-    position: relative;
-    width: 220px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: slid 30s linear infinite;
-    margin-top: 150px;
-    margin-bottom: 100px;
+.scope {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: slid 30s linear infinite;
+  margin-top: 150px;
+  margin-bottom: 100px;
 
-    
-  }
-  .title-g{
-    font-family: "Anton", sans-serif;
-    font-size: 7.5vw;
-    background: linear-gradient(180deg, #fff, #2e2e2e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* z-index: 1; */
+  
+}
+.title-g{
+  font-family: "Anton", sans-serif;
+  font-size: 7.5vw;
+  background: linear-gradient(180deg, #fff, #2e2e2e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* z-index: 1; */
 }
 
 .subtitle-g{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
-    color: #fff;
-    letter-spacing: 0.1em;
-    opacity: 0.3;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+  color: #fff;
+  letter-spacing: 0.1em;
+  opacity: 0.3;
 }   
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    .scope {
-        width: 180px;
-        height: 180px;
+  .scope {
+      width: 180px;
+      height: 180px;
 
-      }
-  }
-  
-  @media (max-width: 768px) {
-    .scope {
-        width: 160px;
-        height: 160px;
+    }
+}
 
-      }
-  }
-  
-  @media (max-width: 480px) {
-      .scope {
-        width: 60%;
-        height: 45vw;
-        animation: slid-vertical 30s linear infinite; /* Change animation to vertical */
-        margin-bottom: 50%;
-      }
-  }
-  .scope span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
-  }
-  /* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .scope {
+      width: 160px;
+      height: 160px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .scope {
+      width: 60%;
+      height: 45vw;
+      animation: slid-vertical 30s linear infinite; /* Change animation to vertical */
+      margin-bottom: 50%;
+    }
+}
+.scope span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+/* Adjustments for mobile view */
 @media (max-width: 1200px) {
-    .scope span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px); /* Closer for smaller screens */
-    }
+  .scope span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px); /* Closer for smaller screens */
   }
-  
-  @media (max-width: 768px) {
-    .scope span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px); /* Closer for mobile view */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .scope span {
-        transform: rotateX(calc(var(--i) * 45deg)) translateZ(250px); /* Rotate vertically */
-      }
-  .title-box-g{
-    margin-bottom: 20%;
-  }
-  .title-g{
-    font-size: 12vw;
-  }
-  .subtitle-g{
-    font-size: 5vw;
-  }
+}
 
+@media (max-width: 768px) {
+  .scope span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px); /* Closer for mobile view */
   }
-  
-  
+}
 
-  .scope span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: 2s;
-  }
-  .scope span:hover img {
-    transform: translateY(-50px) scale(1.5);
-  }
-  @keyframes slid {
-    0% {
-      transform: perspective(1000px) rotateY(0deg);
+@media (max-width: 480px) {
+  .scope span {
+      transform: rotateX(calc(var(--i) * 45deg)) translateZ(250px); /* Rotate vertically */
     }
-    100% {
-      transform: perspective(1000px) rotateY(360deg);
-    }
-  }
+.title-box-g{
+  margin-bottom: 20%;
+}
+.title-g{
+  font-size: 12vw;
+}
+.subtitle-g{
+  font-size: 5vw;
+}
 
-  .title-box-g{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* z-index: 1; */
-  }
+}
 
 
 
+.scope span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+.scope span:hover img {
+  transform: translateY(-50px) scale(1.5);
+}
+@keyframes slid {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
 
-  /* Keyframes for horizontal rotation (default) */
-  @keyframes slid-horizontal {
-    0% {
-      transform: perspective(1000px) rotateY(0deg);
-    }
-    100% {
-      transform: perspective(1000px) rotateY(360deg);
-    }
+.title-box-g{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1; */
+}
+
+
+
+
+/* Keyframes for horizontal rotation (default) */
+@keyframes slid-horizontal {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
   }
-  
-  /* Keyframes for vertical rotation (mobile) */
-  @keyframes slid-vertical {
-    0% {
-      transform: perspective(1000px) rotateX(0deg);
-    }
-    100% {
-      transform: perspective(1000px) rotateX(-360deg);
-    }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
   }
+}
+
+/* Keyframes for vertical rotation (mobile) */
+@keyframes slid-vertical {
+  0% {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(-360deg);
+  }
+}

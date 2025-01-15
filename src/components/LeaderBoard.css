@@ -1,0 +1,56 @@
+.outer-leaderboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Prevent horizontal scrolling */
+  background: linear-gradient(180deg, #06182e, #0e3059);
+}
+
+.title-leaderboard {
+  font-family: "Anton", sans-serif;
+  font-size: 4.5vw;
+  background: linear-gradient(180deg, #fff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  padding-bottom: 1.5%;
+}
+
+.leaderboard {
+  height: 80vh;
+  width: auto;
+  padding-bottom: 1%;
+  
+}
+
+
+@media (max-width: 768px) {
+    .title-leaderboard {
+      font-size: 7vw;
+      padding-bottom: 3%;
+    }
+    .leaderboard{
+        width: 49vw;
+        height: auto;
+        padding-bottom: 4%;
+    }
+  }
+  
+@media (max-width: 480px) {
+
+    .title-leaderboard {
+      font-size: 12vw;
+      margin-top: 5%;
+      padding-bottom: 3%;
+    }
+
+    .leaderboard{
+        width: 90vw;
+        height: auto;
+        padding-bottom: 7%;
+    }
+
+  }
