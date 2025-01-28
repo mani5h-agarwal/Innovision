@@ -6,7 +6,7 @@ const LeaderBoard = ({leaderboard_image}) => {
 
   return (
     <div className="outer-leaderboard">
-      <a className="title-leaderboard">LeaderBoard</a>
+      <a className="title-leaderboard">Results</a>
       <img src={leaderboard_image} alt="" className="leaderboard"/>
     </div>
   );
