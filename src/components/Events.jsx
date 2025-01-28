@@ -81,7 +81,7 @@ const Events = () => {
           />
         ))}
       </div>
-      <div className="instructions" ref={instructionsRef}>
+      {/* <div className="instructions" ref={instructionsRef}>
         <p className="inst">
           Instructions for Innovision'25
           <br />
@@ -93,7 +93,7 @@ const Events = () => {
           {/* <a className="clan" href={clanURL}>
             Click here
           </a> */}
-          <br />
+          {/* <br />
           3. Choose the arenas you want to conquer using the events registration button. Why settle for one battle
           when you can dominate them all? 💪
           <br />
@@ -132,7 +132,7 @@ const Events = () => {
             </div>
           </div>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

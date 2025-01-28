@@ -11,9 +11,9 @@ const Card = ({ title, description, image, subtitle, sigimage, onViewClick }) =>
         <a className="subtitle-card">{subtitle}</a>
       </div>
       <p className="description">{description}</p>
-      <button className="view-btn" onClick={onViewClick}>
+      {/* <button className="view-btn" onClick={onViewClick}>
         <a className="button-title-view">Go</a>
-      </button>
+      </button> */}
       <img src={sigimage} className="sig-image" alt={subtitle} />
     </div>
   );
